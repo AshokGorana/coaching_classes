@@ -33,13 +33,13 @@ const ChampionSlider = () => {
           loop={true}
         >
           <SwiperSlide>
-            <img className="w-sm" src="/public/images/slide1.webp" alt="Slide 1" />
+            <img className="w-sm" src="public/images/slide1.webp" alt="Slide 1" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="w-sm" src="/public/images/slide2.webp" alt="Slide 2" />
+            <img className="w-sm" src="public/images/slide2.webp" alt="Slide 2" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="w-sm" src="/public/images/slide3.webp" alt="Slide 3" />
+            <img className="w-sm" src="public/images/slide3.webp" alt="Slide 3" />
           </SwiperSlide>
         </Swiper>
       </div>
