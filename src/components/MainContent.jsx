@@ -1,23 +1,19 @@
 import React from 'react'
 import ChampionSlider from "./ChampionSlider";
+import StudentSlider from "./StudentSlider";
+import Subject from "./Subjects";
 
-function MainContent(){
+// border-8 border-red-400
 
-    return (
-        <div>
-            <Slides/>
-        </div>
-    )
-}
+function MainContent() {
 
-
-function Slides(){
-
-    return (
-        <div className="min-h-screen border-8 border-red-400 mt-[4.8rem] box-border">
+  return (
+    <div className="min-h-screen grid gap-5 w-full mt-18 box-border">
       <ChampionSlider />
+      <StudentSlider />
+      <Subject />
     </div>
-    )
+  )
 }
 
 export default MainContent;

@@ -9,8 +9,8 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const ChampionSlider = () => {
   return (
-    <div className="mt-5 grid grid-cols-2 gap-[12rem] px-24">
-       <div className="flex justify-center flex-col leading-15">
+    <div className="mt-5 w-full gap-8 py-4 max-auto items-center grid grid-cols-1 md:grid-cols-2 px-6 justify-evenly">
+      <div className="max-w-lg flex flex-col leading-15">
         <div className="text-white text-4xl bold ">Your Dream.</div>
         <div className="text-white text-4xl bold ">Our Expertise.</div>
         <div className="text-white bold">What brings you to us today?</div>
@@ -22,24 +22,24 @@ const ChampionSlider = () => {
         </div>
       </div>
 
-      <div className="">
-        <Swiper
+      <div className="max-w-lg inline-block">
+        <Swiper className="w-[400px] m-auto"
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
           autoplay={{ delay: 3000 }}
           // navigation
-          // pagination={{ clickable: true }}
+          pagination={{ clickable: true }}
           loop={true}
         >
           <SwiperSlide>
-            <img className="w-sm" src="/images/slide1.webp" alt="Slide 1" />
+            <img className="w-sm mb-8" src="/images/slide1.webp" alt="Slide 1" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="w-sm" src="/images/slide2.webp" alt="Slide 2" />
+            <img className="w-sm mb-8" src="/images/slide2.webp" alt="Slide 2" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="w-sm" src="/images/slide3.webp" alt="Slide 3" />
+            <img className="w-sm mb-8" src="/images/slide3.webp" alt="Slide 3" />
           </SwiperSlide>
         </Swiper>
       </div>
