@@ -4,6 +4,9 @@ import Navbar from './components/Navbar'
 import ChampionSlider from './components/ChampionSlider'
 import StudentSlider from './components/StudentSlider'
 import ProgramCards from './components/ProgramCards'
+import TrendingCourses from './components/TrendingCourses'
+import CallbackForm from './components/CallbackForm'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -15,6 +18,9 @@ function App() {
         <ChampionSlider />
         <StudentSlider />
         <ProgramCards/>
+        <TrendingCourses/>
+        <CallbackForm/>
+        <Footer/>
       </main>
     </div>
   )
