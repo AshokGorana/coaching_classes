@@ -19,12 +19,12 @@ const ChampionSlider = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left content */}
-          <div className="flex-col space-y-6 lg:space-y-8 text-center lg:text-left order-2 lg:order-1">
-            <div className="space-y-2">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
+          <div className="flex-col space-y-3 lg:space-y-5 text-center lg:text-left order-2 lg:order-1">
+            <div className="">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-bold text-white leading-tight">
                 Your Dream.
               </h1>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-bold text-white leading-tight">
                 Our Expertise.
               </h1>
             </div>

@@ -4,9 +4,11 @@ import { Menu } from 'lucide-react';
 import { navItems } from '../data/navConfig';
 import NavItem from './NavItem';
 import NavButton from './NavButton';
+import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef(null);
 
   const handleDropdownToggle = useCallback((itemId) => {
@@ -49,12 +51,14 @@ const Navbar = () => {
       >
         {/* Left Section */}
         <div className="leftNavbar flex items-center gap-8">
-          <button 
+          <button onClick={() => setMenuOpen(true)}
             className="manuBarIcon text-white hover:text-blue-400 cursor-pointer transition-colors p-2 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-lg"
             aria-label="Open menu"
           >
             <Menu size={24} />
           </button>
+
+          <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
           <div className="text-white font-bold text-3xl tracking-wider cursor-pointer">
             TSG

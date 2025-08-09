@@ -14,6 +14,17 @@ const courses = [
     live: true,
   },
   {
+    category: "JEE",
+    title: "JEE Enthusiast Self Study Plus Course",
+    details: [
+      "Latest recording covering full syllabus",
+      "Digital study material incl. books, RACEs & more",
+      "32(part+full) syllabus tests",
+    ],
+    price: "₹16,900",
+    live: true,
+  },
+  {
     category: "Class 6–10",
     title: "10th CBSE Board Online Course [All Subjects]",
     details: [
@@ -23,7 +34,7 @@ const courses = [
     ],
     price: "₹34,999",
     live: true,
-  },
+  }
 ];
 
 const TrendingCourses = () => {
@@ -41,7 +52,7 @@ const TrendingCourses = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-full border ${
+              className={`px-4 py-2 rounded-full border cursor-pointer ${
                 activeTab === tab
                   ? "bg-white border-blue-500 text-blue-600"
                   : "bg-white border-gray-300 text-gray-700"

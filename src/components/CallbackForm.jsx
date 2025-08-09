@@ -15,7 +15,7 @@ const CallbackForm = () => {
         </div>
 
         {/* Right Side Form */}
-        <div className="flex-1 text-white bg-[#111c2e] px-12 py-4 rounded-2xl shadow-lg">
+        <div className="flex-1 text-white bg-[#111c2e] px-12 py-4 rounded-2xl shadow-lg sm:px-10">
           <h2 className="text-xl font-bold mb-4">Request a callback</h2>
           <form className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

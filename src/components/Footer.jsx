@@ -90,7 +90,6 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-4 text-lg">
             <FaYoutube className="hover:text-red-500 cursor-pointer" />
-            <FaYoutube className="hover:text-red-500 cursor-pointer" />
             <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
             <FaXTwitter className="hover:text-black cursor-pointer" />
             <FaLinkedinIn className="hover:text-blue-700 cursor-pointer" />
