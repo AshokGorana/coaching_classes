@@ -21,3 +21,9 @@ body {
   display: block;
   }
 }
+
+@media (max-width: 790px) {
+  .callBackIcon {
+    display: none;
+  }
+}

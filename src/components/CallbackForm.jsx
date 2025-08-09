@@ -6,7 +6,7 @@ const CallbackForm = () => {
       <div className="flex flex-col gap-18 md:flex-row items-center p-6 md:p-10 max-w-5xl w-full">
         
         {/* Left Side Image */}
-        <div className="flex-1 flex justify-center mb-6 md:mb-0">
+        <div className="callBackIcon flex-1 flex justify-center mb-6 md:mb-0">
           <img
             src="https://asset.allen.in/dccd40f4-6c9d-4d84-8dc5-287391ec51a2/original.webp"
             alt="Student Illustration"
