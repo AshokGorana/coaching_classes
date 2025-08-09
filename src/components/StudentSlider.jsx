@@ -1,34 +1,32 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import React from 'react';
+import Slider from './Slider';
 
-const StudentSlider = () => {
+function StudentSlider() {
+  const sliderImages = [
+    'https://allen-ui-clone.vercel.app/Homepage_Banner_1_sn5css.webp',
+    'https://allen-ui-clone.vercel.app/v6cgvy44tde2yjq4yguo.webp',
+    'https://allen-ui-clone.vercel.app/v6cgvy44tde2yjq4yguo.webp',
+  ];
+
   return (
-    <div className="w-full flex items-center justify-center">
-      <Swiper className="max-w-5xl"
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={30}
-        slidesPerView={1}
-        autoplay={{ delay: 3000 }}
-        pagination={{ clickable: true }}
-        loop={true}
-      >
-        <SwiperSlide>
-          <img className="mb-8" src="/images/studentSlide1.avif" alt="Slide 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className="mb-8" src="/images/studentSlide2.png" alt="Slide 2" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className="mb-8" src="/images/studentSlide3.png" alt="Slide 3" />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+    <div className="p-4 sm:p-8">
+      <div className="max-w-7xl mx-auto">
+
+        {/* Main Slider */}
+        <div className="border-1 mb-12">
+          <Slider
+            images={sliderImages}
+            autoPlayInterval={4000}
+            showDots={true}
+            showArrows={false}
+          />
+        </div>
+        </div> 
+      </div>
   );
-};
+}
 
 export default StudentSlider;
+
+        
 

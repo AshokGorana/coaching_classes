@@ -4,22 +4,12 @@ body {
   background: #0f1824;
 }
 
-.swiper-pagination-bullet {
-  background: #bbb;
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background: #333;
-}
-
-.ri-menu-line {
-  font-size: 25px;
+.manuBarIcon {
   display: none;
 }
 
-@media (max-width: 1000px) {
-  .Navbar .leftNavbar ul {
+@media (max-width: 1030px) {
+  nav .leftNavbar ul {
     display: none;
   }
 
@@ -27,20 +17,7 @@ body {
     gap: 12px;
   }
 
-  .ri-menu-line {
+  .manuBarIcon {
   display: block;
   }
-
-  .rightNavbar button {
-    font-size: 10px;
-  }
-
-  .rightNavbar {
-    gap: 12px;
-  }
-
-}
-
-@media (max-width: 835px) {
-
 }
